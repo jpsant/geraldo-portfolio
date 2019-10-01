@@ -1,0 +1,17 @@
+.container {
+  background-color: #3C3C3C;
+  color: white;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+}
+
+.container h1 {
+  margin: 5% 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=Footer.module.css.map */

@@ -1,0 +1,89 @@
+.cardContainer {
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0.5;
+  // cursor: pointer;
+  background-color: white;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1fr .6fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5% 0;
+  border-radius: 3px;
+
+  .cardTitle {
+    transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .subTitle {
+      transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0;
+      transform: translateY(30px);
+      grid-row: 2/3;
+      grid-column: 2/3;
+      text-align: center;
+  }
+
+  .languages {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: .1fr .2fr;
+    margin: 5%;
+
+    .title {
+      transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0;
+      grid-row: 1/2;
+      // align-self: center;
+      text-align: center;
+
+      h2 {
+        font-size: 1.3em;
+        margin: 5% 0;
+      }
+    }
+    
+    .languageNames {
+      transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+      opacity: 0;
+      grid-row: 2/3;
+      align-self: center;
+      text-align: center;
+      
+      h2 {
+        font-size: 1em;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.cardContainer:hover {
+  opacity: 1;
+
+  .cardTitle {
+    transform: translateY(-40px);
+  }
+
+  .subTitle {
+      opacity: 1;
+      transform: translateY(5px);
+  }
+
+  .languages {
+
+    .title {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+
+    .languageNames {
+      opacity: 1;
+      transform: translateY(-9px);
+      transition-delay: .2s;
+    }
+  }
+}

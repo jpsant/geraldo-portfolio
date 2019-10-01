@@ -1,0 +1,44 @@
+.projectsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: .2fr 1fr;
+      grid-template-rows: .2fr 1fr;
+  background-color: #292929;
+}
+
+.projectsContainer .projectsTitle {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -ms-grid;
+  display: grid;
+}
+
+.projectsContainer .projectsTitle .container {
+  width: 40%;
+  height: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #3C3C3C;
+  border-radius: 3px;
+  color: white;
+  margin-top: 5%;
+}
+
+.projectsContainer .projectsTitle .container h1 {
+  text-align: center;
+}
+
+.projectsContainer .cardContainer {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: .3fr 1fr .3fr;
+      grid-template-columns: .3fr 1fr .3fr;
+}
+/*# sourceMappingURL=Projects.module.css.map */
