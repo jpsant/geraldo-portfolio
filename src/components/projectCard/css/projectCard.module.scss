@@ -59,6 +59,19 @@
       }
     }
   }
+
+  .links {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+    opacity: 0;
+
+    h2 {
+      text-align: center;
+      font-size: 1.3em;
+        margin: 5% 0;
+    }
+  }
 }
 
 .cardContainer:hover {
@@ -85,5 +98,10 @@
       transform: translateY(-9px);
       transition-delay: .2s;
     }
+  }
+
+  .links {
+    opacity: 1;
+    transform: translateY(-10px);
   }
 }

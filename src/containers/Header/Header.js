@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <>
         <div className={classes.displayHeader}>
-          <h1>Header!</h1>
+          <h1>Geraldo Figueiredo.</h1>
         </div>
       </>
     )

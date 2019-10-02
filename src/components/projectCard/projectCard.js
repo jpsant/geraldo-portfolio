@@ -20,6 +20,9 @@ const projectCard = (props) => {
                         <h2>python</h2>
                     </div>
                 </div>
+                <div className={classes.links}>
+                    <h2>Links</h2>
+                </div>
             </div>
         </>
     );

@@ -92,6 +92,24 @@
   margin: 0;
 }
 
+.cardContainer .links {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -webkit-transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 0;
+}
+
+.cardContainer .links h2 {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 5% 0;
+}
+
 .cardContainer:hover {
   opacity: 1;
 }
@@ -119,5 +137,11 @@
           transform: translateY(-9px);
   -webkit-transition-delay: .2s;
           transition-delay: .2s;
+}
+
+.cardContainer:hover .links {
+  opacity: 1;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 /*# sourceMappingURL=projectCard.module.css.map */
