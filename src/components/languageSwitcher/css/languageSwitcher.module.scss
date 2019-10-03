@@ -1,0 +1,84 @@
+.brazilFlag {
+    position: absolute;
+    top: -50%;
+    right: 110%;
+}
+
+.euaFlag {
+    position: absolute;
+    top: -50%;
+    left: 110%;
+}
+
+.switch {
+    position: absolute;
+    width: 48px;
+    height: 24px;
+    top: 3.1%;
+    right: 5%;
+
+    @media screen and (max-width: 570px) {
+        width: 40px;
+        right: calc(15% - 2%);
+        top: 1.5%;
+    }
+
+
+    .input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0081AF;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .input:checked+.slider {
+        background-color: #0081AF;
+    }
+
+    .input:focus+.slider {
+        box-shadow: 0 0 1px #0081AF;
+    }
+
+    .input:checked+.slider:before {
+        -webkit-transform: translateX(24px);
+        -ms-transform: translateX(24px);
+        transform: translateX(24px);
+
+        @media screen and (max-width: 570px) {
+            -webkit-transform: translateX(17px);
+            -ms-transform: translateX(17px);
+            transform: translateX(17px)
+        }
+    }
+
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
