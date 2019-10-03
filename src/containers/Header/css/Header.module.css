@@ -5,8 +5,8 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 0.5fr 1fr 0.5fr;
-      grid-template-rows: 0.5fr 1fr 0.5fr;
+  -ms-grid-rows: 0.5fr 1fr 0.7fr;
+      grid-template-rows: 0.5fr 1fr 0.7fr;
   background-color: #272932;
 }
 
@@ -17,6 +17,11 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  opacity: 0;
+  -webkit-animation: appear 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+          animation: appear 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .displayHeader .headerTitle {
@@ -53,8 +58,31 @@
   opacity: 0;
   -webkit-animation: show 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
           animation: show 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+  font-size: 2em;
+}
+
+.displayHeader .social {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+          animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.displayHeader .social a .socialImg {
+  width: 3em;
+  margin: 2%;
 }
 
 @-webkit-keyframes show {
@@ -80,6 +108,50 @@
     opacity: 1;
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes showLinks {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes showLinks {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

@@ -13,8 +13,6 @@
       grid-column: 1/2;
       color: white;
       background-color: #820263;
-      z-index: 200;
-      height: 100%;
 
       h1 {
         align-self: center;
@@ -31,10 +29,15 @@
       text-align: justify;
       height: 100vh;
       color: white;
-      background-color: #292929;
+      // background-color: #292929;
+      background-color: #272932; 
 
       h1 {
         margin-top: 0;
+        margin: 5%;
+      }
+      p {
+        margin: 5%;
       }
     }
   }
@@ -66,10 +69,16 @@
       padding: 3%;
       text-align: justify;
       color: white;
-      background-color: #292929;
+      background-color: #272932; 
+      // background-color: #292929;
 
       h1 {
         margin-top: 0;
+        margin: 5%;
+      }
+
+      p {
+        margin: 5%
       }
     }
   }
@@ -100,10 +109,15 @@
       padding: 3%;
       text-align: justify;
       color: white;
-      background-color: #292929;
+      background-color: #272932; 
+      // background-color: #292929;
 
       h1 {
-        margin-top: 0;
+        margin-top: 0;margin: 5%;
+      }
+
+      p {
+        margin: 5%
       }
     }
   }

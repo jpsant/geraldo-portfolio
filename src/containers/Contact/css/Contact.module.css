@@ -3,7 +3,7 @@
   display: grid;
   -ms-grid-rows: .3fr 1fr;
       grid-template-rows: .3fr 1fr;
-  background-color: #292929;
+  background-color: #272932;
   height: 100vh;
 }
 
@@ -12,7 +12,7 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   color: white;
-  background-color: #3C3C3C;
+  background-color: #4E4F57;
   text-align: center;
 }
 

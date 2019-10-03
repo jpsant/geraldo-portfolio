@@ -4,12 +4,15 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.7fr;
   background-color: #272932;
 
   .switcherContainer {
     grid-column: 3/4;
     grid-row: 1/2;
+    opacity: 0;
+    animation: appear 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation-delay: 3s;
   }
 
   .headerTitle {
@@ -37,7 +40,25 @@
       margin: 0 1.5%;
       opacity: 0;
       animation: show 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-      animation-delay: 2.5s;
+      animation-delay: 2.8s;
+      font-size: 2em;
+    }
+  }
+
+  .social {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: flex-end;
+    text-align: center;
+    opacity: 0;
+    animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation-delay: 2.8s;
+
+    a {
+      .socialImg {
+        width: 3em;
+        margin: 2%;
+      }
     }
   }
 }
@@ -51,6 +72,28 @@
   to {
     opacity: 1;
     transform: translateY(-5px);
+  }
+}
+
+@keyframes showLinks {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
