@@ -21,9 +21,8 @@
     }
 
     .textContainer {
+      display: grid;
       grid-column: 2/3;
-      align-self: center;
-      justify-self: center;
       font-size: 1.2em;
       padding: 3%;
       text-align: justify;
@@ -31,13 +30,15 @@
       color: white;
       // background-color: #292929;
       background-color: #272932; 
-
+      
       h1 {
+        align-self: center;
         margin-top: 0;
         margin: 5%;
       }
       p {
         margin: 5%;
+        align-self: center;
       }
     }
   }
@@ -62,10 +63,10 @@
     }
 
     .textContainer {
+      display: grid;
       grid-column: 1/2;
-      align-self: center;
-      justify-self: center;
       font-size: 1.2em;
+      height: 100vh;
       padding: 3%;
       text-align: justify;
       color: white;
@@ -102,11 +103,11 @@
     }
 
     .textContainer {
+      display: grid;
       grid-column: 2/3;
-      align-self: center;
-      justify-self: center;
       font-size: 1.2em;
       padding: 3%;
+      height: 100vh;
       text-align: justify;
       color: white;
       background-color: #272932; 

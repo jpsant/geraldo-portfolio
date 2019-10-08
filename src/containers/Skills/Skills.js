@@ -11,7 +11,7 @@ class Skills extends Component {
                 <div className={classes.container}>
                     <div className={classes.skillsContainer}>
                         <div className={classes.title}>
-                            <h1>Habilidades</h1>
+                            <h1>{this.props.language ? 'Minhas Habilidades' : 'My Skills'}</h1>
                         </div>
                         <div className={classes.skills}>
                             <Fade top cascade >
@@ -66,4 +66,10 @@ class Skills extends Component {
     }
 }
 
-export default Skills;
+const mapStateToProps = state => {
+    return {
+        language: state.language
+    }
+}
+
+export default connect(mapStateToProps)(Skills);

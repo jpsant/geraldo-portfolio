@@ -12,7 +12,7 @@
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   color: white;
-  background-color: #4E4F57;
+  background-color: #35384C;
   text-align: center;
 }
 
@@ -93,6 +93,6 @@
   padding: 22px 88px;
   border: none;
   color: white;
-  background-color: #3c3c3c;
+  background-color: #35384C;
 }
 /*# sourceMappingURL=Contact.module.css.map */

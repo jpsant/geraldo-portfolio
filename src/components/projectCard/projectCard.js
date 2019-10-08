@@ -6,10 +6,10 @@ const projectCard = (props) => {
         <>
             <div className={classes.cardContainer}>
                 <div className={classes.cardTitle}>
-                    <h1>Título</h1>
+                    <h1>{props.language ? 'Título' : 'Title'}</h1>
                 </div>
                 <div className={classes.subTitle}>
-                    <h2>Descrição</h2>
+                    <h2>{props.language ? 'Descrição' : 'Description'}</h2>
                 </div>
                 <div className={classes.languages}>
                     <div className={classes.title}>
