@@ -1,61 +1,194 @@
 .container {
+  display: grid;
+  grid-template-columns: 0.3fr 0.8fr 0.3fr;
+  background-color: #272932;
+
+  .skillsContainer {
+    grid-column: 2/3;
+    width: 100%;
+    margin: 5%;
+    background-color: #4e4f57;
+    align-self: center;
+    justify-self: center;
+    border-radius: 3px;
     display: grid;
-    grid-template-columns: .3fr .8fr .3fr;
-    background-color: #272932;
+    grid-template-rows: 0.2fr 1fr;
 
-    .skillsContainer {
-        grid-column: 2/3;
-        width: 100%;
-        margin: 5%;
-        background-color: #4E4F57;
+    .title {
+      grid-row: 1/2;
+
+      h1 {
+        color: white;
+        text-align: center;
         align-self: center;
-        justify-self: center;
-        border-radius: 3px;
-        display: grid;
-        grid-template-rows: .2fr 1fr;
-
-        .title {
-            grid-row: 1/2;
-
-            h1 {
-                color: white;
-                text-align: center;
-                align-self: center;
-            }
-        }
-
-        .skills {
-            grid-row: 2/3;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin: 5%;
-
-            .block1 {
-                grid-column: 1/2;
-                text-align: center;
-
-                .skillIcon {
-                    width: 6em;
-                }
-            }
-
-            .block2 {
-                grid-column: 2/3;
-                text-align: center;
-
-                .skillIcon {
-                    width: 5.7em;
-                }
-            }
-
-            .block3 {
-                grid-column: 3/4;
-                text-align: center;
-
-                .skillIcon {
-                    width: 5.7em;
-                }
-            }
-        }
+      }
     }
+
+    .skills {
+      grid-row: 2/3;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 5%;
+
+      .block1 {
+        grid-column: 1/2;
+        text-align: center;
+
+        .golang {
+          position: relative;
+        }
+
+        .docker {
+          position: relative;
+        }
+
+        .grpc {
+          position: relative;
+        }
+
+        .skillIcon {
+          width: 6em;
+        }
+      }
+
+      .block2 {
+        grid-column: 2/3;
+        text-align: center;
+
+        .c {
+          position: relative;
+        }
+
+        .plant {
+          position: relative;
+        }
+
+        .mysql {
+          position: relative;
+        }
+
+        .skillIcon {
+          width: 5.7em;
+        }
+      }
+
+      .block3 {
+        grid-column: 3/4;
+        text-align: center;
+
+        .javascript {
+          position: relative;
+        }
+
+        .nodejs {
+          position: relative;
+        }
+
+        .otimizacao {
+          position: relative;
+        }
+
+        .skillIcon {
+          width: 5.7em;
+        }
+
+        .nodeJs {
+          width: 6em;
+          margin: 6% 0;
+        }
+      }
+    }
+  }
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 140px;
+  background-color: white;
+  color: #26262b;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  bottom: 87%;
+  left: 47%;
+  margin-left: -60px;
+  transition: opacity 0.3s;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.tooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.golang:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.docker:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.grpc:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.c:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.plant:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.mysql:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.javascript:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.nodejs:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.otimizacao:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
 }

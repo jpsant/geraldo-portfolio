@@ -1,8 +1,8 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .3fr .8fr .3fr;
-      grid-template-columns: .3fr .8fr .3fr;
+  -ms-grid-columns: 0.3fr 0.8fr 0.3fr;
+      grid-template-columns: 0.3fr 0.8fr 0.3fr;
   background-color: #272932;
 }
 
@@ -12,7 +12,7 @@
   grid-column: 2/3;
   width: 100%;
   margin: 5%;
-  background-color: #4E4F57;
+  background-color: #4e4f57;
   -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
@@ -20,8 +20,8 @@
   border-radius: 3px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: .2fr 1fr;
-      grid-template-rows: .2fr 1fr;
+  -ms-grid-rows: 0.2fr 1fr;
+      grid-template-rows: 0.2fr 1fr;
 }
 
 .container .skillsContainer .title {
@@ -56,6 +56,18 @@
   text-align: center;
 }
 
+.container .skillsContainer .skills .block1 .golang {
+  position: relative;
+}
+
+.container .skillsContainer .skills .block1 .docker {
+  position: relative;
+}
+
+.container .skillsContainer .skills .block1 .grpc {
+  position: relative;
+}
+
 .container .skillsContainer .skills .block1 .skillIcon {
   width: 6em;
 }
@@ -65,6 +77,18 @@
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   text-align: center;
+}
+
+.container .skillsContainer .skills .block2 .c {
+  position: relative;
+}
+
+.container .skillsContainer .skills .block2 .plant {
+  position: relative;
+}
+
+.container .skillsContainer .skills .block2 .mysql {
+  position: relative;
 }
 
 .container .skillsContainer .skills .block2 .skillIcon {
@@ -78,7 +102,100 @@
   text-align: center;
 }
 
+.container .skillsContainer .skills .block3 .javascript {
+  position: relative;
+}
+
+.container .skillsContainer .skills .block3 .nodejs {
+  position: relative;
+}
+
+.container .skillsContainer .skills .block3 .otimizacao {
+  position: relative;
+}
+
 .container .skillsContainer .skills .block3 .skillIcon {
   width: 5.7em;
+}
+
+.container .skillsContainer .skills .block3 .nodeJs {
+  width: 6em;
+  margin: 6% 0;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 140px;
+  background-color: white;
+  color: #26262b;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  bottom: 87%;
+  left: 47%;
+  margin-left: -60px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.tooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.golang:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.docker:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.grpc:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.c:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.plant:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mysql:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.javascript:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nodejs:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.otimizacao:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
 }
 /*# sourceMappingURL=Skills.module.css.map */
