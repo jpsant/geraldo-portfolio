@@ -1,13 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
 .container {
-    // background-color: #3C3C3C; cor 1
     background-color: #35384C;
     color: white;
     height: 100%;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5% 0;
+    
+    .title {
+        // padding: 5% 0;
+        grid-column: 1/2;
+        justify-self: center;
 
-    h1 {
-        margin: 5% 0;
-        align-self: center;
-        justify-self: center
+        h1 {
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 4em;
+            margin: 0;
+            margin-top: 5%;
+            align-self: center;
+            justify-self: center
+        }
+
+        h3 {
+            margin: 0 1.5%;
+        }
+    }
+
+    .socialMedia {
+        grid-column: 2/3;
+        text-align: center;
+
+        .horizontalLine {
+            border: 3px solid white;
+            width: 65%;
+        }
     }
 }

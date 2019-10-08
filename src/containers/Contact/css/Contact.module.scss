@@ -1,68 +1,111 @@
 .container {
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  background-color: #272932;
+  height: 100vh;
+
+  .titleContainer {
+    grid-row: 1/2;
+    color: white;
+    background-color: #35384c;
+    text-align: center;
+  }
+
+  .columnsContainer {
+    grid-row: 2/3;
     display: grid;
-    grid-template-rows: .3fr 1fr;
-    // background-color: #292929;
-    background-color: #272932;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
 
-    .titleContainer {
-        grid-row: 1/2;
+    .columnOne {
+      color: white;
+      grid-column: 1/2;
+    //   background-color: #272932;
+      display: grid;
+
+      h1 {
+        align-self: center;
+        justify-self: center;
+      }
+    }
+
+    .columnTwo {
+      display: grid;
+      grid-column: 2/3;
+      color: white;
+      padding: 5%;
+      margin: 3%;
+      border-radius: 3px;
+      background-color: #35384c;
+      display: grid;
+
+      form {
+          align-self: center;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+
+      input[type="submit"] {
+        justify-self: center;
+        background-color: #272932;
+        opacity: .5;
         color: white;
-        // background-color: #3C3C3C;
-        background-color: #35384C;
-        text-align: center;
-    }
+        font-size: 1.5em;
+        padding: 16px 50px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
 
-    .cardsContainer {
+      input[type="submit"]:hover {
+        opacity: 1;
+      }
+
+      .name {
+        grid-row: 1/2;
+      }
+
+      .subject {
         grid-row: 2/3;
-        display: grid;
-        grid-template-rows: 1fr .3fr;
-        grid-template-columns: 1fr .1fr 1fr;
+      }
 
-        .cardOne {
-            grid-row: 1/2;
-            grid-column: 1/2;
-            margin: 5%;
-            background-color: white;
-            border-radius: 3px;
-            display: grid;
+      .body {
+        grid-row: 3/4;
+      }
 
-            h1 {
-                align-self: center;
-                justify-self: center;
-            }
-        }
-
-        .cardTwo {
-            grid-row: 1/2;
-            grid-column: 3/4;
-            margin: 5%;
-            background-color: white;
-            border-radius: 3px;
-            display: grid;
-
-            h1 {
-                align-self: center;
-                justify-self: center;
-            }
-        }
-
-        .buttonContainer {
-            grid-row: 2/3;
-            grid-column: 1/4;
-            display: grid;
-
-            button {
-                justify-self: center;
-                align-self: center;
-                cursor: pointer;
-                padding: 22px 88px;
-                border: none;
-                color: white;
-                // background-color: #3c3c3c cor 1
-                background-color: #35384C;
-            }
-        }
-
+      .submit {
+        grid-row: 4/5;
+        justify-self: center;
+        align-self: center;
+      }
     }
+
+    .buttonContainer {
+      grid-row: 2/3;
+      grid-column: 1/4;
+      display: grid;
+
+      button {
+        justify-self: center;
+        align-self: center;
+        cursor: pointer;
+        padding: 22px 88px;
+        border: none;
+        color: white;
+        // background-color: #3c3c3c cor 1
+        background-color: #35384c;
+      }
+    }
+  }
 }

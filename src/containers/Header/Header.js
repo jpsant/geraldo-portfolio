@@ -18,7 +18,7 @@ class Header extends Component {
             <h3>{this.props.language ? 'Programador' : 'Programmer'}</h3>
           </div>
           <div className={classes.social}>
-            <a href="lul"><img className={classes.socialImg} alt="" src={require('./assets/github1.svg')}></img></a>
+            <a href="https://github.com/gerfg"><img className={classes.socialImg} alt="" src={require('./assets/github1.svg')}></img></a>
             <a href="lul"><img className={classes.socialImg} alt="" src={require('./assets/linkedin2.svg')}></img></a>
           </div>
         </div>
