@@ -17,7 +17,7 @@ class Contact extends Component {
                         <div className={classes.columnOne}>
                             <h1>cover or Text</h1>
                         </div>
-                        <Fade>
+                        <Fade delay={200}>
                             <div className={classes.columnTwo}>
                                 <form action="mailto:geraldo.figueiredosj@gmail.com" method="post" encType="text/plain" className={classes.emailModal}>
                                     <div className={classes.name}>

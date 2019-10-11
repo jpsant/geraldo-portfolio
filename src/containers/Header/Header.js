@@ -19,7 +19,7 @@ class Header extends Component {
           </div>
           <div className={classes.social}>
             <a href="https://github.com/gerfg"><img className={classes.socialImg} alt="" src={require('./assets/github1.svg')}></img></a>
-            <a href="lul"><img className={classes.socialImg} alt="" src={require('./assets/linkedin2.svg')}></img></a>
+            <a href="https://www.linkedin.com/in/geraldo-figueiredo-594b6711a"><img className={classes.socialImg} alt="" src={require('./assets/linkedin2.svg')}></img></a>
           </div>
         </div>
       </>

@@ -35,7 +35,7 @@ class Skills extends Component {
                                         <img alt="" className={classes.skillIcon} src={require('./assets/icons/4.png')}></img>
                                     </div>
                                     <div className={classes.plant}>
-                                        <span className={classes.tooltipText}>Plantinha</span>
+                                        <span className={classes.tooltipText}>MongoDB</span>
                                         <img alt="" className={classes.skillIcon} src={require('./assets/icons/5.png')}></img>
                                     </div>
                                     <div className={classes.mysql}>
