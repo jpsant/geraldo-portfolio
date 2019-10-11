@@ -36,7 +36,7 @@ class Sections extends Component {
                         </div>
 
                         <div className={classes.cover} >
-                            <h1>Section 1 Cover</h1>
+                            <img className={classes.coverImg} src={require('./assets/photos/1.jpeg')}></img>
                         </div>
 
                     </div>
@@ -66,13 +66,13 @@ class Sections extends Component {
                         </div>
 
                         <div className={classes.cover}>
-                            <h1>Section 2 Cover</h1>
+                            <img className={classes.coverImg} src={require('./assets/photos/2.jpeg')}></img>
                         </div>
 
                     </div>
                     <div className={classes.sectionThree}>
                         <div className={classes.textContainer}>
-                            <div style={{alignSelf: 'center'}}>
+                            <div style={{ alignSelf: 'center' }}>
                                 <Fade top>
                                     <h1>Section 3</h1>
                                 </Fade>
@@ -95,7 +95,7 @@ class Sections extends Component {
                             </div>
                         </div>
                         <div className={classes.cover}>
-                            <h1>Section 3 Cover</h1>
+                        <img className={classes.coverImg} src={require('./assets/photos/3.jpg')}></img>
                         </div>
                     </div>
                 </div>
