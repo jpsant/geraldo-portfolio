@@ -34,6 +34,7 @@
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  border: 10px solid white;
 }
 
 .sectionsContainer .sectionOne .textContainer {
@@ -94,6 +95,7 @@
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  border: 10px solid white;
 }
 
 .sectionsContainer .sectionTwo .textContainer {
@@ -148,6 +150,7 @@
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  border: 10px solid white;
 }
 
 .sectionsContainer .sectionThree .textContainer {

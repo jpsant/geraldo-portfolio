@@ -13,6 +13,9 @@ class Header extends Component {
           <div className={classes.switcherContainer}>
             <LanguageSwitcher />
           </div>
+          <div className={classes.logoContainer}>
+            <img alt="" src={require('./assets/logo.png')}></img>
+          </div>
           <div className={classes.headerTitle}>
             <h1>Geraldo Figueiredo.</h1>
             <h3>{this.props.language ? 'Programador' : 'Programmer'}</h3>

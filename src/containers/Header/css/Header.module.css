@@ -24,6 +24,25 @@
           animation-delay: 3s;
 }
 
+.displayHeader .logoContainer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  opacity: 0;
+  -webkit-animation: show 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+          animation: show 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  margin: 5%;
+}
+
+.displayHeader .logoContainer img {
+  height: 5em;
+}
+
 .displayHeader .headerTitle {
   -ms-grid-column-align: center;
       justify-self: center;
