@@ -3,11 +3,14 @@
   grid-template-columns: 0.3fr 0.8fr 0.3fr;
   background-color: #272932;
 
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 0.2fr auto 0.2fr;
+  }
+
   .skillsContainer {
     grid-column: 2/3;
     width: 100%;
     margin: 5%;
-    // background-color: #4e4f57; cor 1
     background-color: #35384C;
     align-self: center;
     justify-self: center;

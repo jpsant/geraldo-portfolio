@@ -25,6 +25,10 @@
 
     img {
       height: 5em;
+
+      @media screen and (max-width: 400px) {
+        height: 4em;
+      }
     }
   }
 
@@ -32,6 +36,13 @@
     justify-self: center;
     grid-row: 2/3;
     grid-column: 2/3;
+
+    @media screen and (max-width: 400px) {
+      grid-column: 1/4;
+      grid-row: 1/4;
+      align-self: center;
+      justify-self: center;
+    }
 
     h1 {
       display: inline-block;
@@ -46,7 +57,14 @@
       white-space: nowrap;
       border-right: 4px solid white;
       margin-bottom: 0;
+
+      @media screen and (max-width: 400px) { 
+        font-size: 2.9em;
+        align-self: center;
+      }
+
     }
+
 
     h3 {
       color: white;
@@ -55,6 +73,10 @@
       animation: show 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
       animation-delay: 2.8s;
       font-size: 2em;
+
+      @media screen and (max-width: 400px) {
+        font-size: 1.3em;
+      }
     }
   }
 

@@ -36,7 +36,7 @@ class Sections extends Component {
                         </div>
 
                         <div className={classes.cover} >
-                            <img alt="" className={classes.coverImg} src={require('./assets/photos/1.jpeg')}></img>
+                            <img alt="" className={classes.coverImg} src={require('./assets/photos/1.jpeg')}></img> 
                         </div>
 
                     </div>

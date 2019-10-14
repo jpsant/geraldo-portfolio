@@ -15,6 +15,15 @@
       grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionOne {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: .5fr 1fr;
+        grid-template-rows: .5fr 1fr;
+  }
+}
+
 .sectionsContainer .sectionOne .cover {
   display: -ms-grid;
   display: grid;
@@ -27,6 +36,17 @@
   background-color: #35384C;
 }
 
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionOne .cover {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: none;
+  }
+}
+
 .sectionsContainer .sectionOne .cover .coverImg {
   height: 60%;
   -ms-flex-item-align: center;
@@ -35,6 +55,12 @@
   -ms-grid-column-align: center;
       justify-self: center;
   border: 10px solid white;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionOne .cover .coverImg {
+    height: 80%;
+  }
 }
 
 .sectionsContainer .sectionOne .textContainer {
@@ -49,6 +75,19 @@
   height: 100vh;
   color: white;
   background-color: #272932;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionOne .textContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: none;
+    font-size: 1em;
+    height: auto;
+  }
 }
 
 .sectionsContainer .sectionOne .textContainer h1 {
@@ -76,6 +115,15 @@
       grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionTwo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: .5fr 1fr;
+        grid-template-rows: .5fr 1fr;
+  }
+}
+
 .sectionsContainer .sectionTwo .cover {
   background-color: #35384C;
   display: -ms-grid;
@@ -88,6 +136,17 @@
   grid-row: 1/2;
 }
 
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionTwo .cover {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: none;
+  }
+}
+
 .sectionsContainer .sectionTwo .cover .coverImg {
   height: 60%;
   -ms-flex-item-align: center;
@@ -96,6 +155,12 @@
   -ms-grid-column-align: center;
       justify-self: center;
   border: 10px solid white;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionTwo .cover .coverImg {
+    height: 80%;
+  }
 }
 
 .sectionsContainer .sectionTwo .textContainer {
@@ -110,6 +175,19 @@
   text-align: justify;
   color: white;
   background-color: #272932;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionTwo .textContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: none;
+    font-size: 1em;
+    height: auto;
+  }
 }
 
 .sectionsContainer .sectionTwo .textContainer h1 {
@@ -131,6 +209,15 @@
       grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionThree {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: .5fr 1fr;
+        grid-template-rows: .5fr 1fr;
+  }
+}
+
 .sectionsContainer .sectionThree .cover {
   background-color: #35384C;
   display: -ms-grid;
@@ -143,6 +230,17 @@
   grid-row: 1/3;
 }
 
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionThree .cover {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: none;
+  }
+}
+
 .sectionsContainer .sectionThree .cover .coverImg {
   height: 60%;
   -ms-flex-item-align: center;
@@ -151,6 +249,12 @@
   -ms-grid-column-align: center;
       justify-self: center;
   border: 10px solid white;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionThree .cover .coverImg {
+    height: 80%;
+  }
 }
 
 .sectionsContainer .sectionThree .textContainer {
@@ -165,6 +269,19 @@
   text-align: justify;
   color: white;
   background-color: #272932;
+}
+
+@media screen and (max-width: 400px) {
+  .sectionsContainer .sectionThree .textContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: none;
+    font-size: 1em;
+    height: auto;
+  }
 }
 
 .sectionsContainer .sectionThree .textContainer h1 {

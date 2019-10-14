@@ -6,6 +6,13 @@
   background-color: #272932;
 }
 
+@media screen and (max-width: 400px) {
+  .container {
+    -ms-grid-columns: 0.2fr auto 0.2fr;
+        grid-template-columns: 0.2fr auto 0.2fr;
+  }
+}
+
 .container .skillsContainer {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
