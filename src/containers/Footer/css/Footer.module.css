@@ -2,18 +2,17 @@
 .container {
   background-color: #35384C;
   color: white;
-  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding: 5% 0;
+  padding: 1% 0;
 }
 
 @media screen and (max-width: 800px) {
   .container {
-    -ms-grid-rows: .8fr .8fr;
-        grid-template-rows: .8fr .8fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
 }
 

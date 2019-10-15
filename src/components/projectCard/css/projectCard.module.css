@@ -14,6 +14,8 @@
       grid-template-columns: 1fr 1fr 1fr;
   margin: 5% 0;
   border-radius: 3px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .cardContainer .cardTitle {

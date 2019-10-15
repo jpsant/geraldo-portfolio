@@ -19,7 +19,7 @@ class Footer extends Component {
                         <div className={classes.socialMedia}>
                             <h1>{this.props.language ? 'Siga-me nas Redes Sociais!' : 'Follow me on my Social Media!'}</h1>
                             <hr className={classes.horizontalLine}></hr>
-                            <Fade up delay={500} >
+                            <Fade cascade delay={500} >
                                 <div className={classes.icons}>
                                     <a href="https://www.facebook.com/geraldo.junior.90226"><img alt="" className={classes.socialIcons} src={require('./assets/facebook.svg')}></img></a>
                                     <a href="https://www.instagram.com/geraldofiguer/"><img alt="" className={classes.socialIcons} src={require('./assets/instagram.svg')}></img></a>

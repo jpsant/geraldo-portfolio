@@ -75,13 +75,17 @@
   position: relative;
 }
 
+.container .skillsContainer .skills .block1 .python {
+  position: relative;
+}
+
 .container .skillsContainer .skills .block1 .skillIcon {
   width: 6em;
 }
 
 @media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block1 .skillIcon {
-    width: 5em;
+    width: 4em;
   }
 }
 
@@ -104,13 +108,18 @@
   position: relative;
 }
 
+.container .skillsContainer .skills .block2 .linux {
+  position: relative;
+  margin: 1% 0;
+}
+
 .container .skillsContainer .skills .block2 .skillIcon {
   width: 5.7em;
 }
 
 @media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block2 .skillIcon {
-    width: 5em;
+    width: 4em;
   }
 }
 
@@ -139,7 +148,7 @@
 
 @media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block3 .skillIcon {
-    width: 5em;
+    width: 4em;
   }
 }
 
@@ -226,6 +235,16 @@
 }
 
 .otimizacao:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.linux:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.python:hover .tooltipText {
   visibility: visible;
   opacity: 1;
 }

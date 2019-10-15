@@ -28,6 +28,10 @@ class Skills extends Component {
                                         <span className={classes.tooltipText}>GRPC</span>
                                         <img alt="" className={classes.skillIcon} src={require('./assets/icons/3.png')}></img>
                                     </div>
+                                    <div className={classes.python}>
+                                        <span className={classes.tooltipText}>Python</span>
+                                        <img alt="" className={classes.skillIcon} src={require('./assets/icons/10.svg')}></img>
+                                    </div>
                                 </div>
                                 <div className={classes.block2}>
                                     <div className={classes.c}>
@@ -42,6 +46,10 @@ class Skills extends Component {
                                         <span className={classes.tooltipText}>MySQL</span>
                                         <img alt="" className={classes.skillIcon} src={require('./assets/icons/6.png')}></img>
                                     </div>
+                                    <div className={classes.linux}>
+                                        <span className={classes.tooltipText}>Linux</span>
+                                        <img alt="" className={classes.skillIcon} src={require('./assets/icons/11.svg')}></img>
+                                    </div>
                                 </div>
                                 <div className={classes.block3}>
                                     <div className={classes.javascript}>
@@ -53,7 +61,7 @@ class Skills extends Component {
                                         <img alt="" className={classes.nodeJs} src={require('./assets/icons/8.svg')}></img>
                                     </div>
                                     <div className={classes.otimizacao}>
-                                        <span className={classes.tooltipText}>Otimização</span>
+                                        <span className={classes.tooltipText}>{this.props.language ? 'Otimização Combinatória' : 'Combinatorial Optimization'}</span>
                                         <img alt="" className={classes.skillIcon} src={require('./assets/icons/9.svg')}></img>
                                     </div>
                                 </div>

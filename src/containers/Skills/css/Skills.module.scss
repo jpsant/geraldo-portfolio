@@ -50,11 +50,15 @@
           position: relative;
         }
 
+        .python {
+          position: relative;
+        }
+
         .skillIcon {
           width: 6em;
 
           @media screen and (max-width: 800px) {
-            width: 5em;
+            width: 4em;
           }
 
         }
@@ -76,11 +80,16 @@
           position: relative;
         }
 
+        .linux {
+          position: relative;
+          margin: 1% 0;
+        }
+
         .skillIcon {
           width: 5.7em;
 
           @media screen and (max-width: 800px) {
-            width: 5em;
+            width: 4em;
           }
           
         }
@@ -106,7 +115,7 @@
           width: 5.7em;
 
           @media screen and (max-width: 800px) {
-            width: 5em;
+            width: 4em;
           }
 
         }
@@ -216,3 +225,18 @@
     opacity: 1;
   }
 }
+
+.linux:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.python:hover {
+  .tooltipText {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
