@@ -7,6 +7,10 @@
   grid-template-rows: 0.5fr 1fr 0.7fr;
   background-color: #272932;
 
+  @media screen and (max-width: 800px) {
+    grid-template-rows: .5fr .7fr .5fr;
+  }
+
   .switcherContainer {
     grid-column: 3/4;
     grid-row: 1/2;
@@ -26,7 +30,7 @@
     img {
       height: 5em;
 
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 800px) {
         height: 4em;
       }
     }
@@ -37,7 +41,7 @@
     grid-row: 2/3;
     grid-column: 2/3;
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 800px) {
       grid-column: 1/4;
       grid-row: 1/4;
       align-self: center;
@@ -58,8 +62,8 @@
       border-right: 4px solid white;
       margin-bottom: 0;
 
-      @media screen and (max-width: 400px) { 
-        font-size: 2.9em;
+      @media screen and (max-width: 800px) { 
+        font-size: 2.7em;
         align-self: center;
       }
 
@@ -74,7 +78,7 @@
       animation-delay: 2.8s;
       font-size: 2em;
 
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 800px) {
         font-size: 1.3em;
       }
     }
@@ -88,6 +92,11 @@
     opacity: 0;
     animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     animation-delay: 2.8s;
+    
+    @media screen and (max-width: 800px ) {
+      animation: showLinks2 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+      animation-delay: 2.8s;
+    }
 
     a {
       .socialImg {
@@ -119,6 +128,18 @@
   to {
     opacity: 1;
     transform: translateY(-30px);
+  }
+}
+
+@keyframes showLinks2 {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(-90px);
   }
 }
 

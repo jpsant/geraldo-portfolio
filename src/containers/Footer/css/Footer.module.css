@@ -10,7 +10,7 @@
   padding: 5% 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container {
     -ms-grid-rows: .8fr .8fr;
         grid-template-rows: .8fr .8fr;
@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .title {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -52,7 +52,7 @@
       justify-self: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .title h1 {
     font-size: 3em;
     margin-top: 7%;
@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .socialMedia {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;

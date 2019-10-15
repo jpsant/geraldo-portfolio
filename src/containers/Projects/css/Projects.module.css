@@ -28,7 +28,7 @@
   margin-top: 5%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .projectsContainer .projectsTitle .container {
     width: 60%;
   }
@@ -48,7 +48,7 @@
       grid-template-columns: .3fr 1fr .3fr;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .projectsContainer .cardContainer {
     -ms-grid-columns: .3fr auto .3fr;
         grid-template-columns: .3fr auto .3fr;

@@ -6,7 +6,7 @@
   background-color: #272932;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container {
     -ms-grid-columns: 0.2fr auto 0.2fr;
         grid-template-columns: 0.2fr auto 0.2fr;
@@ -79,7 +79,7 @@
   width: 6em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block1 .skillIcon {
     width: 5em;
   }
@@ -108,7 +108,7 @@
   width: 5.7em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block2 .skillIcon {
     width: 5em;
   }
@@ -137,7 +137,7 @@
   width: 5.7em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block3 .skillIcon {
     width: 5em;
   }
@@ -148,7 +148,7 @@
   margin: 6% 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block3 .nodeJs {
     width: 5em;
   }

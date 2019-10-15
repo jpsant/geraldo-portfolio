@@ -27,7 +27,7 @@
   background-color: #272932;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .columnsContainer {
     -ms-grid-rows: .5fr 1fr;
         grid-template-rows: .5fr 1fr;
@@ -43,7 +43,7 @@
   display: grid;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .columnsContainer .columnOne {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -76,7 +76,7 @@
   display: grid;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container .columnsContainer .columnTwo {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;

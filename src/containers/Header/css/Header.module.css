@@ -10,6 +10,13 @@
   background-color: #272932;
 }
 
+@media screen and (max-width: 800px) {
+  .displayHeader {
+    -ms-grid-rows: .5fr .7fr .5fr;
+        grid-template-rows: .5fr .7fr .5fr;
+  }
+}
+
 .displayHeader .switcherContainer {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -43,7 +50,7 @@
   height: 5em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .displayHeader .logoContainer img {
     height: 4em;
   }
@@ -60,7 +67,7 @@
   grid-column: 2/3;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .displayHeader .headerTitle {
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
@@ -93,9 +100,9 @@
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .displayHeader .headerTitle h1 {
-    font-size: 2.9em;
+    font-size: 2.7em;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -113,7 +120,7 @@
   font-size: 2em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .displayHeader .headerTitle h3 {
     font-size: 1.3em;
   }
@@ -134,6 +141,15 @@
           animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
   -webkit-animation-delay: 2.8s;
           animation-delay: 2.8s;
+}
+
+@media screen and (max-width: 800px) {
+  .displayHeader .social {
+    -webkit-animation: showLinks2 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation: showLinks2 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+  }
 }
 
 .displayHeader .social a .socialImg {
@@ -190,6 +206,32 @@
     opacity: 1;
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
+  }
+}
+
+@-webkit-keyframes showLinks2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+}
+
+@keyframes showLinks2 {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
   }
 }
 
