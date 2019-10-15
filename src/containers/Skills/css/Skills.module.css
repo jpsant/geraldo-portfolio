@@ -79,6 +79,12 @@
   width: 6em;
 }
 
+@media screen and (max-width: 400px) {
+  .container .skillsContainer .skills .block1 .skillIcon {
+    width: 5em;
+  }
+}
+
 .container .skillsContainer .skills .block2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -100,6 +106,12 @@
 
 .container .skillsContainer .skills .block2 .skillIcon {
   width: 5.7em;
+}
+
+@media screen and (max-width: 400px) {
+  .container .skillsContainer .skills .block2 .skillIcon {
+    width: 5em;
+  }
 }
 
 .container .skillsContainer .skills .block3 {
@@ -125,9 +137,21 @@
   width: 5.7em;
 }
 
+@media screen and (max-width: 400px) {
+  .container .skillsContainer .skills .block3 .skillIcon {
+    width: 5em;
+  }
+}
+
 .container .skillsContainer .skills .block3 .nodeJs {
   width: 6em;
   margin: 6% 0;
+}
+
+@media screen and (max-width: 400px) {
+  .container .skillsContainer .skills .block3 .nodeJs {
+    width: 5em;
+  }
 }
 
 .tooltipText {

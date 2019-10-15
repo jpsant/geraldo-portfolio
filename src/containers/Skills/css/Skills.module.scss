@@ -52,6 +52,11 @@
 
         .skillIcon {
           width: 6em;
+
+          @media screen and (max-width: 400px) {
+            width: 5em;
+          }
+
         }
       }
 
@@ -73,6 +78,11 @@
 
         .skillIcon {
           width: 5.7em;
+
+          @media screen and (max-width: 400px) {
+            width: 5em;
+          }
+          
         }
       }
 
@@ -94,11 +104,21 @@
 
         .skillIcon {
           width: 5.7em;
+
+          @media screen and (max-width: 400px) {
+            width: 5em;
+          }
+
         }
 
         .nodeJs {
           width: 6em;
           margin: 6% 0;
+
+          @media screen and (max-width: 400px) {
+            width: 5em;
+          }
+          
         }
       }
     }

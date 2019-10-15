@@ -1,8 +1,8 @@
 .projectsContainer {
     display: grid;
     grid-template-rows: .2fr 1fr;
-    // background-color: #292929;
     background-color: #272932; 
+
 
     .projectsTitle {
         grid-row: 1/2;
@@ -13,11 +13,15 @@
             height: 100px;
             align-self: center;
             justify-self: center;
-            // background-color: #4E4F57; cor 1
             background-color: #35384C;
             border-radius: 3px;
             color: white;
             margin-top: 5%;
+
+            @media screen and (max-width: 400px) {
+                width: 60%;
+        
+            }
 
             h1 {
                 text-align: center;
@@ -29,5 +33,10 @@
         grid-row: 2/3;
         display: grid;
         grid-template-columns: .3fr 1fr .3fr;
+
+        @media screen and (max-width: 400px) {
+
+            grid-template-columns: .3fr auto .3fr;
+        }
     }
 }

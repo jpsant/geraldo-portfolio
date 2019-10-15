@@ -28,6 +28,12 @@
   margin-top: 5%;
 }
 
+@media screen and (max-width: 400px) {
+  .projectsContainer .projectsTitle .container {
+    width: 60%;
+  }
+}
+
 .projectsContainer .projectsTitle .container h1 {
   text-align: center;
 }
@@ -40,5 +46,12 @@
   display: grid;
   -ms-grid-columns: .3fr 1fr .3fr;
       grid-template-columns: .3fr 1fr .3fr;
+}
+
+@media screen and (max-width: 400px) {
+  .projectsContainer .cardContainer {
+    -ms-grid-columns: .3fr auto .3fr;
+        grid-template-columns: .3fr auto .3fr;
+  }
 }
 /*# sourceMappingURL=Projects.module.css.map */
