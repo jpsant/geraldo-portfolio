@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import classes from './css/About.module.css';
 import { Fade } from 'react-reveal';
 
+import { connect } from 'react-redux';
+
 class Sections extends Component {
 
     render() {
@@ -13,13 +15,16 @@ class Sections extends Component {
                         <div className={classes.textContainer}>
                             <div style={{ alignSelf: 'center' }}>
                                 <Fade top>
-                                    <h1>Olá Mundo</h1>
+                                    <h1>{this.props.language ? 'Olá Mundo!' : 'Hello World!'}</h1>
                                 </Fade>
                                 <Fade>
                                     <h2>
-                                        Me chamo Geraldo Figueiredo e através dos conhecimentos obtidos durante o curso de engenharia de computação (UFPB)
-                                        trilhei uma linha de pesquisa e estudos voltados para desenvolvimento back-end, mais precisamente,
-                                        desenvolvendo API's e algoritmos para otimização combinatória.
+                                        {
+                                            this.props.language ? `Me chamo Geraldo Figueiredo e através dos conhecimentos obtidos durante o curso de engenharia de computação (UFPB)
+                                            trilhei uma linha de pesquisa e estudos voltados para desenvolvimento back-end, mais precisamente,
+                                            desenvolvendo API's e algoritmos para otimização combinatória.` : `My name is Geraldo Figueiredo and through the knowledge obtained during the course of computer engineering (UFPB) 
+                                            I followed a line of research and studies focused on development backend, more precisely developing APIs and algorithms for combinatorial optimization.`
+                                        }
                                     </h2>
 
                                 </Fade>
@@ -36,25 +41,37 @@ class Sections extends Component {
                         <div className={classes.textContainer}>
                             <div style={{ alignSelf: 'center' }}>
                                 <Fade top>
-                                    <h1>Resumo Técnico</h1>
+                                    <h1>{this.props.language ? 'Resumo Técnico' : 'Technical Summary'}</h1>
                                 </Fade>
                                 <Fade>
                                     <h3>
-                                        Desenvolvo grande parte de minhas API's utilizando Golang ou Node.js como linguagem principal, 
-                                        seja o desenvolvimento de um monolito ou um sistema baseado em microserviços. Para comunicação 
-                                        entre os microserviços, utilizo o protocolo gRPC, e, por fim, Docker para deploy e escalabilidade 
-                                        dos serviços.
+                                        {
+                                            this.props.language ? `Desenvolvo grande parte de minhas API's utilizando Golang ou Node.js como linguagem principal, 
+                                            seja o desenvolvimento de um monolito ou um sistema baseado em microserviços. Para comunicação 
+                                            entre os microserviços, utilizo o protocolo gRPC, e, por fim, Docker para deploy e escalabilidade 
+                                            dos serviços.` : `I develop most of my APIs using Golang or Node.js as the main language,
+                                            whether it's developing a monolith or a microservice based system. For communication
+                                            between microservices, I use the gRPC protocol, and finally Docker for deploy and scalability
+                                            of services.`
+                                        }
                                     </h3>
 
                                     <h3>
-                                        Para Otimização Combinatória, por ser necessário extrema eficiência e leveza, utilizo C++ para desenvolver o otimizador,
-                                        e, para uma interface, web ou console, utilizo novamente Golang.
+                                        {
+                                            this.props.language ? `Para Otimização Combinatória, por ser necessário extrema eficiência e leveza, utilizo C++ para desenvolver o otimizador,
+                                            e, para uma interface, web ou console, utilizo novamente Golang.` : `For Combinatorial Optimization, because extreme efficiency and lightness is required, 
+                                            I use C ++ to develop the optimizer,and for an interface, web or console, I use Golang again.`
+                                        }
                                     </h3>
 
                                     <h3>
-                                        Em relação a banco de dados, depois de uma análise mais criteriosa para entender se existe a 
-                                        necessidade de um banco de dados relacional ou de um não relacional, utilizo MongoDB como não relacional
-                                        e MySQL/SQLServer como relacional.
+                                        {
+                                            this.props.language ? `Em relação a banco de dados, depois de uma análise mais criteriosa para entender se existe a 
+                                            necessidade de um banco de dados relacional ou de um não relacional, utilizo MongoDB como não relacional
+                                            e MySQL/SQLServer como relacional.` : `Regarding database, after a more careful analysis to understand if there is a
+                                            need for a relational or nonrelational database, I use MongoDB as nonrelational
+                                            and MySQL / SQLServer as relational.`
+                                        }
                                     </h3>
                                 </Fade>
                             </div>
@@ -102,4 +119,10 @@ class Sections extends Component {
     }
 }
 
-export default Sections;
+const mapStateToProps = state => {
+    return {
+        language: state.language
+    }
+}
+
+export default connect(mapStateToProps)(Sections);
