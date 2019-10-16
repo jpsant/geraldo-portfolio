@@ -2,12 +2,20 @@
     position: absolute;
     top: -50%;
     right: 110%;
+
+    @media screen and (max-width: 800px) {
+        top: -30%;
+    }
 }
 
 .euaFlag {
     position: absolute;
     top: -50%;
     left: 110%;
+
+    @media screen and (max-width: 800px) {
+        top: -30%;
+    }
 }
 
 .switch {
@@ -17,7 +25,7 @@
     top: 3.1%;
     right: 5%;
 
-    @media screen and (max-width: 570px) {
+    @media screen and (max-width: 800px) {
         width: 40px;
         right: calc(15% - 2%);
         top: 1.5%;
@@ -70,7 +78,7 @@
         -ms-transform: translateX(24px);
         transform: translateX(24px);
 
-        @media screen and (max-width: 570px) {
+        @media screen and (max-width: 800px) {
             -webkit-transform: translateX(17px);
             -ms-transform: translateX(17px);
             transform: translateX(17px)

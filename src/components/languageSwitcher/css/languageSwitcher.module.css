@@ -4,10 +4,22 @@
   right: 110%;
 }
 
+@media screen and (max-width: 800px) {
+  .brazilFlag {
+    top: -30%;
+  }
+}
+
 .euaFlag {
   position: absolute;
   top: -50%;
   left: 110%;
+}
+
+@media screen and (max-width: 800px) {
+  .euaFlag {
+    top: -30%;
+  }
 }
 
 .switch {
@@ -18,7 +30,7 @@
   right: 5%;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 800px) {
   .switch {
     width: 40px;
     right: calc(15% - 2%);
@@ -70,7 +82,7 @@
   transform: translateX(24px);
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 800px) {
   .switch .input:checked + .slider:before {
     -webkit-transform: translateX(17px);
     transform: translateX(17px);

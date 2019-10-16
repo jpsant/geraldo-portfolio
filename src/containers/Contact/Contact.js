@@ -15,7 +15,7 @@ class Contact extends Component {
                     </div>
                     <div className={classes.columnsContainer}>
                         <div className={classes.columnOne}>
-                            <h1>cover or Text</h1>
+                            {/* <h1>cover or Text</h1> */}
                         </div>
                         <Fade delay={200}>
                             <div className={classes.columnTwo}>

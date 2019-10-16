@@ -44,6 +44,7 @@
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     grid-column: none;
+    height: 50vh;
   }
 }
 
@@ -284,7 +285,7 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionThree .cover1 .coverImg1 {
-    height: 70%;
+    height: 60%;
   }
 }
 
@@ -323,7 +324,7 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionThree .cover2 .coverImg2 {
-    height: 50%;
+    height: 40%;
   }
 }
 /*# sourceMappingURL=About.module.css.map */

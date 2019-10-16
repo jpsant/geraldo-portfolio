@@ -15,10 +15,11 @@
 }
 
 .projectsContainer .projectsTitle .container {
+  display: -ms-grid;
+  display: grid;
   width: 40%;
   height: 100px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+  -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -34,6 +35,11 @@
 }
 
 .projectsContainer .projectsTitle .container h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   text-align: center;
 }
 
