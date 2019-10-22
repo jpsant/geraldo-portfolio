@@ -19,8 +19,8 @@
   .sectionsContainer .sectionOne {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: .5fr 1fr;
-        grid-template-rows: .5fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
   }
 }
 
@@ -48,7 +48,7 @@
 }
 
 .sectionsContainer .sectionOne .cover .coverImg {
-  height: 60%;
+  height: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -59,7 +59,7 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionOne .cover .coverImg {
-    height: 80%;
+    height: 90%;
   }
 }
 
@@ -133,8 +133,8 @@
   .sectionsContainer .sectionTwo {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: .5fr 1fr;
-        grid-template-rows: .5fr 1fr;
+    -ms-grid-rows: .9fr 1fr;
+        grid-template-rows: .9fr 1fr;
   }
 }
 
@@ -162,7 +162,7 @@
 }
 
 .sectionsContainer .sectionTwo .cover .coverImg {
-  height: 60%;
+  height: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -173,7 +173,7 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionTwo .cover .coverImg {
-    height: 70%;
+    height: 72%;
   }
 }
 
@@ -272,7 +272,7 @@
 }
 
 .sectionsContainer .sectionThree .cover1 .coverImg1 {
-  height: 60%;
+  height: 80%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -284,7 +284,8 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionThree .cover1 .coverImg1 {
-    height: 60%;
+    height: 90%;
+    margin: 0;
   }
 }
 
@@ -323,7 +324,8 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionThree .cover2 .coverImg2 {
-    height: 40%;
+    height: 50%;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=About.module.css.map */

@@ -14,7 +14,7 @@ class Sections extends Component {
                     <div className={classes.sectionOne}>
                         <div className={classes.textContainer}>
                             <div style={{ alignSelf: 'center' }}>
-                                <Fade top>
+                                <Fade>
                                     <h1>{this.props.language ? 'Olá Mundo!' : 'Hello World!'}</h1>
                                 </Fade>
                                 <Fade>
@@ -40,7 +40,7 @@ class Sections extends Component {
                     <div className={classes.sectionTwo}>
                         <div className={classes.textContainer}>
                             <div style={{ alignSelf: 'center' }}>
-                                <Fade top>
+                                <Fade>
                                     <h1>{this.props.language ? 'Resumo Técnico' : 'Technical Summary'}</h1>
                                 </Fade>
                                 <Fade>
