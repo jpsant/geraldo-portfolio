@@ -33,7 +33,7 @@ class Sections extends Component {
                         </div>
 
                         <div className={classes.cover} >
-                            <img alt="" className={classes.coverImg} src={require('./assets/photos/1.jpeg')}></img>
+                            <img alt="" className={classes.coverImg} src={require('./assets/photos/1.jpg')}></img>
                         </div>
 
                     </div>
@@ -107,7 +107,7 @@ class Sections extends Component {
                             </div>
                         </div> */}
                         <div className={classes.cover1}>
-                            <img alt="" className={classes.coverImg1} src={require('./assets/photos/3.jpeg')}></img>
+                            <img alt="" className={classes.coverImg1} src={require('./assets/photos/3.jpg')}></img>
                         </div>
                         <div className={classes.cover2}>
                             <img alt="" className={classes.coverImg2} src={require('./assets/photos/4.jpeg')}></img>
