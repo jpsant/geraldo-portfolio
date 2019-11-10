@@ -31,6 +31,50 @@
           animation-delay: 3s;
 }
 
+.displayHeader .blogContainer {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  display: -ms-grid;
+  display: grid;
+}
+
+.displayHeader .blogContainer .blogLink {
+  opacity: 0;
+  text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3.2em;
+  font-weight: bolder;
+  -webkit-animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+          animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+@media screen and (max-width: 800px) {
+  .displayHeader .blogContainer .blogLink {
+    -webkit-animation: showLinks2 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation: showLinks2 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .displayHeader .blogContainer .blogLink {
+    font-size: 2.4em;
+  }
+}
+
 .displayHeader .logoContainer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -109,6 +153,12 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .displayHeader .headerTitle h1 {
+    font-size: 2.3em;
+  }
+}
+
 .displayHeader .headerTitle h3 {
   color: white;
   margin: 0 1.5%;
@@ -155,6 +205,12 @@
 .displayHeader .social a .socialImg {
   width: 3em;
   margin: 2%;
+}
+
+@media screen and (max-width: 370px) {
+  .displayHeader .social a .socialImg {
+    width: 2.4em;
+  }
 }
 
 @-webkit-keyframes show {

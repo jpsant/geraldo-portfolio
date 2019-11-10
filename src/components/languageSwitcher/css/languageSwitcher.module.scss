@@ -6,6 +6,7 @@
     @media screen and (max-width: 800px) {
         top: -30%;
     }
+
 }
 
 .euaFlag {
@@ -29,6 +30,10 @@
         width: 40px;
         right: calc(15% - 2%);
         top: 1.5%;
+    }
+
+    @media screen and (max-width: 370px) {
+        right: calc(19% - 3%);
     }
 
 

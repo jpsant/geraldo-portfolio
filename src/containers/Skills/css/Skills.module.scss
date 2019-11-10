@@ -25,7 +25,12 @@
         color: white;
         text-align: center;
         align-self: center;
+
+        @media screen and (max-width: 370px) {
+          font-size: 1.8em;
+        }
       }
+
     }
 
     .skills {
@@ -61,6 +66,10 @@
             width: 4em;
           }
 
+          @media screen and (max-width: 370px) {
+            width: 3.2em;
+          }
+
         }
       }
 
@@ -91,6 +100,10 @@
           @media screen and (max-width: 800px) {
             width: 4em;
           }
+
+          @media screen and (max-width: 370px) {
+            width: 3.2em;
+          }
           
         }
       }
@@ -118,6 +131,10 @@
             width: 4em;
           }
 
+          @media screen and (max-width: 370px) {
+            width: 3.2em;
+          }
+
         }
 
         .nodeJs {
@@ -126,6 +143,10 @@
 
           @media screen and (max-width: 800px) {
             width: 5em;
+          }
+
+          @media screen and (max-width: 370px) {
+            width: 3.2em;
           }
 
         }

@@ -59,7 +59,13 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionOne .cover .coverImg {
-    height: 90%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .sectionsContainer .sectionOne .cover .coverImg {
+    height: 50%;
   }
 }
 
@@ -173,7 +179,7 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionTwo .cover .coverImg {
-    height: 72%;
+    height: 57%;
   }
 }
 
@@ -324,7 +330,7 @@
 
 @media screen and (max-width: 800px) {
   .sectionsContainer .sectionThree .cover2 .coverImg2 {
-    height: 50%;
+    height: 30%;
     margin: 0;
   }
 }

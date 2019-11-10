@@ -38,6 +38,12 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .switch {
+    right: calc(19% - 3%);
+  }
+}
+
 .switch .input {
   opacity: 0;
   width: 0;

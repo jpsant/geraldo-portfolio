@@ -17,6 +17,37 @@
     opacity: 0;
     animation: appear 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
     animation-delay: 3s;
+
+  
+  }
+
+  .blogContainer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+
+    .blogLink {
+      opacity: 0;
+      text-decoration: none;
+      align-self: flex-end;
+      justify-self: center;
+      color: white;
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 3.2em;
+      font-weight: bolder;
+      animation: showLinks 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+      animation-delay: 3.2s;
+
+      @media screen and (max-width: 800px ) {
+        animation: showLinks2 1.3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        animation-delay: 2.8s;
+        font-size: 3em;
+      }
+
+      @media screen and (max-width: 370px) {
+        font-size: 2.4em;
+      }
+    }
   }
 
   .logoContainer {
@@ -67,6 +98,10 @@
         align-self: center;
       }
 
+      @media screen and (max-width: 370px) {
+        font-size: 2.3em;
+      }
+
     }
 
 
@@ -102,6 +137,10 @@
       .socialImg {
         width: 3em;
         margin: 2%;
+
+        @media screen and (max-width: 370px) {
+        width: 2.4em;
+        }
       }
     }
   }

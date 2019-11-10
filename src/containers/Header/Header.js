@@ -16,6 +16,9 @@ class Header extends Component {
           <div className={classes.logoContainer}>
             <img alt="" src={require('./assets/logo.png')}></img>
           </div>
+          <div className={classes.blogContainer}>
+            <a className={classes.blogLink} href="/blog">Blog</a> 
+          </div>
           <div className={classes.headerTitle}>
             <h1>Geraldo Figueiredo.</h1>
             <h3>{this.props.language ? 'Programador' : 'Programmer'}</h3>

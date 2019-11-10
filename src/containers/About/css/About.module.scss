@@ -31,7 +31,11 @@
         border: 5px solid white;
 
         @media screen and (max-width: 800px) {
-          height: 90%;
+          height: 80%;
+        }
+
+        @media screen and (max-width: 370px) {
+          height: 50%;
         }
 
       }
@@ -107,7 +111,7 @@
         border: 5px solid white;
 
         @media screen and (max-width: 800px) {
-          height: 72%;
+          height: 57%;
         }
       }
     }
@@ -205,7 +209,7 @@
         margin: 6% 5%;
 
         @media screen and (max-width: 800px) {
-          height: 50%;
+          height: 30%;
           margin: 0;
         }
       }

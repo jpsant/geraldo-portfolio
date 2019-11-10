@@ -45,6 +45,12 @@
       align-self: center;
 }
 
+@media screen and (max-width: 370px) {
+  .container .skillsContainer .title h1 {
+    font-size: 1.8em;
+  }
+}
+
 .container .skillsContainer .skills {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -89,6 +95,12 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .container .skillsContainer .skills .block1 .skillIcon {
+    width: 3.2em;
+  }
+}
+
 .container .skillsContainer .skills .block2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
@@ -123,6 +135,12 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .container .skillsContainer .skills .block2 .skillIcon {
+    width: 3.2em;
+  }
+}
+
 .container .skillsContainer .skills .block3 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -152,6 +170,12 @@
   }
 }
 
+@media screen and (max-width: 370px) {
+  .container .skillsContainer .skills .block3 .skillIcon {
+    width: 3.2em;
+  }
+}
+
 .container .skillsContainer .skills .block3 .nodeJs {
   width: 6em;
   margin: 6% 0;
@@ -160,6 +184,12 @@
 @media screen and (max-width: 800px) {
   .container .skillsContainer .skills .block3 .nodeJs {
     width: 5em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container .skillsContainer .skills .block3 .nodeJs {
+    width: 3.2em;
   }
 }
 
