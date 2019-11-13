@@ -33,11 +33,11 @@ class Sections extends Component {
                         </div>
 
                         <div className={classes.cover} >
-                            <img alt="" className={classes.coverImg} src={require('./assets/photos/1.jpg')}></img>
+                            <img alt="" className={classes.coverImg} src={require('./assets/photos/1-tiny.jpg')}></img>
                         </div>
 
                     </div>
-                    {/* <div className={classes.sectionTwo}>
+                    <div className={classes.sectionTwo}>
                         <div className={classes.textContainer}>
                             <div style={{ alignSelf: 'center' }}>
                                 <Fade>
@@ -78,10 +78,10 @@ class Sections extends Component {
                         </div>
 
                         <div className={classes.cover}>
-                            <img alt="" className={classes.coverImg} src={require('./assets/photos/2.jpg')}></img>
+                            <img alt="" className={classes.coverImg} src={require('./assets/photos/2-tiny.jpg')}></img>
                         </div>
 
-                    </div> */}
+                    </div>
                     <div className={classes.sectionThree}>
                         {/* <div className={classes.textContainer}>
                             <div style={{ alignSelf: 'center' }}>
@@ -107,10 +107,10 @@ class Sections extends Component {
                             </div>
                         </div> */}
                         <div className={classes.cover1}>
-                            <img alt="" className={classes.coverImg1} src={require('./assets/photos/3.jpg')}></img>
+                            <img alt="" className={classes.coverImg1} src={require('./assets/photos/3-tiny.jpeg')}></img>
                         </div>
                         <div className={classes.cover2}>
-                            <img alt="" className={classes.coverImg2} src={require('./assets/photos/4.jpeg')}></img>
+                            <img alt="" className={classes.coverImg2} src={require('./assets/photos/4-tiny.jpeg')}></img>
                         </div>
                     </div>
                 </div>
